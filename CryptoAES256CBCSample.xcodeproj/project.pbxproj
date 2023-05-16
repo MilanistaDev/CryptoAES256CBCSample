@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5D093D2A13E58A009D3D4A /* IDZSwiftCommonCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = FD5D093C2A13E58A009D3D4A /* IDZSwiftCommonCrypto */; };
 		FDBE50522A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */; };
 		FDBE50542A135CF6003BC78C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE50532A135CF6003BC78C /* ContentView.swift */; };
 		FDBE50562A135CF7003BC78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE50552A135CF7003BC78C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5D093D2A13E58A009D3D4A /* IDZSwiftCommonCrypto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CryptoAES256CBCSample;
+			packageProductDependencies = (
+				FD5D093C2A13E58A009D3D4A /* IDZSwiftCommonCrypto */,
+			);
 			productName = CryptoAES256CBCSample;
 			productReference = FDBE504E2A135CF6003BC78C /* CryptoAES256CBCSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = FDBE50452A135CF6003BC78C;
+			packageReferences = (
+				FD5D093B2A13E58A009D3D4A /* XCRemoteSwiftPackageReference "IDZSwiftCommonCrypto" */,
+			);
 			productRefGroup = FDBE504F2A135CF6003BC78C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD5D093B2A13E58A009D3D4A /* XCRemoteSwiftPackageReference "IDZSwiftCommonCrypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iosdevzone/IDZSwiftCommonCrypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD5D093C2A13E58A009D3D4A /* IDZSwiftCommonCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD5D093B2A13E58A009D3D4A /* XCRemoteSwiftPackageReference "IDZSwiftCommonCrypto" */;
+			productName = IDZSwiftCommonCrypto;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDBE50462A135CF6003BC78C /* Project object */;
 }
