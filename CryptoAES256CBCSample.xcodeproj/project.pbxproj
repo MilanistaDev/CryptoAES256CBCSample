@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FD5D093D2A13E58A009D3D4A /* IDZSwiftCommonCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = FD5D093C2A13E58A009D3D4A /* IDZSwiftCommonCrypto */; };
+		FD5D093F2A1408BE009D3D4A /* TopContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D093E2A1408BE009D3D4A /* TopContentView.swift */; };
+		FD5D09412A141823009D3D4A /* EncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D09402A141823009D3D4A /* EncryptionView.swift */; };
+		FD5D09432A14183C009D3D4A /* DecryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D09422A14183C009D3D4A /* DecryptionView.swift */; };
+		FD5D09462A14187C009D3D4A /* TopContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D09452A14187C009D3D4A /* TopContentType.swift */; };
 		FDBE50522A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */; };
-		FDBE50542A135CF6003BC78C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE50532A135CF6003BC78C /* ContentView.swift */; };
 		FDBE50562A135CF7003BC78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE50552A135CF7003BC78C /* Assets.xcassets */; };
 		FDBE50592A135CF7003BC78C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE50582A135CF7003BC78C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD5D093E2A1408BE009D3D4A /* TopContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopContentView.swift; sourceTree = "<group>"; };
+		FD5D09402A141823009D3D4A /* EncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionView.swift; sourceTree = "<group>"; };
+		FD5D09422A14183C009D3D4A /* DecryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionView.swift; sourceTree = "<group>"; };
+		FD5D09452A14187C009D3D4A /* TopContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopContentType.swift; sourceTree = "<group>"; };
 		FDBE504E2A135CF6003BC78C /* CryptoAES256CBCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAES256CBCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAES256CBCSampleApp.swift; sourceTree = "<group>"; };
-		FDBE50532A135CF6003BC78C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDBE50552A135CF7003BC78C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBE50582A135CF7003BC78C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD5D09442A14186B009D3D4A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D09452A14187C009D3D4A /* TopContentType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FD5D09472A141897009D3D4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D093E2A1408BE009D3D4A /* TopContentView.swift */,
+				FD5D09402A141823009D3D4A /* EncryptionView.swift */,
+				FD5D09422A14183C009D3D4A /* DecryptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FDBE50452A135CF6003BC78C = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */,
-				FDBE50532A135CF6003BC78C /* ContentView.swift */,
+				FD5D09472A141897009D3D4A /* Views */,
+				FD5D09442A14186B009D3D4A /* Enums */,
 				FDBE50552A135CF7003BC78C /* Assets.xcassets */,
 				FDBE50572A135CF7003BC78C /* Preview Content */,
 			);
@@ -145,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBE50542A135CF6003BC78C /* ContentView.swift in Sources */,
+				FD5D093F2A1408BE009D3D4A /* TopContentView.swift in Sources */,
 				FDBE50522A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift in Sources */,
+				FD5D09462A14187C009D3D4A /* TopContentType.swift in Sources */,
+				FD5D09412A141823009D3D4A /* EncryptionView.swift in Sources */,
+				FD5D09432A14183C009D3D4A /* DecryptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

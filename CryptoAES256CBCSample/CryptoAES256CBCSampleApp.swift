@@ -11,7 +11,7 @@ import SwiftUI
 struct CryptoAES256CBCSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TopContentView()
         }
     }
 }
