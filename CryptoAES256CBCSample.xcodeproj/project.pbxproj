@@ -15,6 +15,7 @@
 		FDBE50522A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */; };
 		FDBE50562A135CF7003BC78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE50552A135CF7003BC78C /* Assets.xcassets */; };
 		FDBE50592A135CF7003BC78C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE50582A135CF7003BC78C /* Preview Assets.xcassets */; };
+		FDF488A22A1C8FE6004CCE10 /* String+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF488A12A1C8FE6004CCE10 /* String+Conversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAES256CBCSampleApp.swift; sourceTree = "<group>"; };
 		FDBE50552A135CF7003BC78C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBE50582A135CF7003BC78C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDF488A12A1C8FE6004CCE10 /* String+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Conversion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				FDBE50512A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift */,
 				FD5D09472A141897009D3D4A /* Views */,
 				FD5D09442A14186B009D3D4A /* Enums */,
+				FDF488A02A1C8F6D004CCE10 /* Extensions */,
 				FDBE50552A135CF7003BC78C /* Assets.xcassets */,
 				FDBE50572A135CF7003BC78C /* Preview Content */,
 			);
@@ -92,6 +95,14 @@
 				FDBE50582A135CF7003BC78C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDF488A02A1C8F6D004CCE10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDF488A12A1C8FE6004CCE10 /* String+Conversion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 				FDBE50522A135CF6003BC78C /* CryptoAES256CBCSampleApp.swift in Sources */,
 				FD5D09462A14187C009D3D4A /* TopContentType.swift in Sources */,
 				FD5D09412A141823009D3D4A /* EncryptionView.swift in Sources */,
+				FDF488A22A1C8FE6004CCE10 /* String+Conversion.swift in Sources */,
 				FD5D09432A14183C009D3D4A /* DecryptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

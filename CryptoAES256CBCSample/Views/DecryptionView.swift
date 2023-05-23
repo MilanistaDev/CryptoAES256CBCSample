@@ -84,12 +84,6 @@ extension DecryptionView {
     }
 }
 
-extension String {
-  func utf8ToHexString() -> String {
-      return self.utf8.map { NSString(format: "%2X", $0) as String }.reduce("", {$0 + $1})
-  }
-}
-
 struct DecryptionView_Previews: PreviewProvider {
     static var previews: some View {
         DecryptionView()
